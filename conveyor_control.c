@@ -1,4 +1,4 @@
-// if included, make sure digital 1 is convComm
+// if included, make sure digital 1 is convComm.
 
 void startConv()
 {
