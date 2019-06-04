@@ -1,11 +1,6 @@
-# burger-automation-project
-Repo for code changes in burger automation project. This repo is made to allow communication for robots connected to the conveyor or part of the project.
+# e_stop
+Use if your bot doesn't interact with the conveyor in any way but performs actions which could cause damage to itself or other robots or people near it.
 
-the branch you base your project on depends where your bot is connected to the project.
+The branch contains a file with the task e_stop(). when started in task main() after including and starting with startTask(e_stop), it will run alongside main() and will stop your robot should the button on sensorValue[univStop] become 1. You can change the port it is assigned to but it must be there somewhere.
 
-## deciding which branch to build code from: 
-
-* if your bot doesn't interact with the conveyor in any way, you must branch e_stop, which includes task e_stop(). this stops your robot no matter what it is currently doing. It also contains pragma.h, a header file with necessary sensor locations to make the task compile.
-* if your bot interacts with the conveyor, you have two possible cases:
-	* **your bot needs the conveyor to be in position in front of the bot to start.** in this case, base your branch off of Template. contains a template for your code that automatically starts the code you write in operate() when the light (or whatever the final sensor becomes) passes over your robot.
-	* **bot interacts with conveyor, but is started by another robot.** in this case, base from conveyor_control, as this gives you access to functions that can interact with the conveyor. 
+the branch also contains pragma.h, a header file you can add to your code by going to: "motors and sensors setup > standard Models > file containing used-defined > browse > '...\documents\github\burger-automation-project'. " This header will add the required sensors to your code without having to hand type the information.
