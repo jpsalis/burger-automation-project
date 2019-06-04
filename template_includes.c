@@ -14,13 +14,13 @@ task main()
 	startTask(e_stop);
 	while(true)
 	{
-		while(SensorValue[lightSensor] > iLightSensorMax)
+		while(SensorValue[lightSensor] < iLightSensorMax)
 			delay(10);
 
 
 		operate(); // user made code
 
-		while(SensorValue[lightSensor] <= iLightSensorMax) // wait until light moves away from sensor
+		while(SensorValue[lightSensor] >= iLightSensorMax) // wait until light moves away from sensor
 			delay(10);
 
 
