@@ -1,7 +1,8 @@
+
 #include "e_stop.c"
 #include "conveyor_control.c"
 
-int iLightSensorMax = 30;
+int iLightSensorMax = 50; // iLightSensorMax has a val if user doesn't define it.
 void init();
 void operate();
 
