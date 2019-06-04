@@ -21,7 +21,7 @@ task main()
 	while(true)
 	{
 
-		motor[light] = 127; // light off
+		motor[light] = 0; // light off
 
 
 		while(SensorValue[startLimit] == 0)
@@ -31,7 +31,7 @@ task main()
 		}
 
 		setConvSpeed(0);
-		motor[light] = -127; // light on
+		motor[light] = 127; // light on
 
 		while(SensorValue[endLimit] == 0)
 		{
