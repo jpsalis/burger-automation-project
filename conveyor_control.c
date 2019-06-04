@@ -11,7 +11,7 @@ void startConv()
 
 
 
-void stopConv();
+void stopConv()
 {
 	for(int i = 0; i < 2; i++)
 	{

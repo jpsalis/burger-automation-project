@@ -2,6 +2,8 @@
 #pragma config(Sensor, dgtl1,  convComm,       sensorDigitalOut)
 #pragma config(Sensor, dgtl2,  univStop,       sensorDigitalIn)
 
+#include "template_includes.c"
+
 /*---------------------------------------------------------------------------*/
 /*                                                                           */
 /*											Template for Automation Project											 */
@@ -9,7 +11,6 @@
 /*---------------------------------------------------------------------------*/
 
 
-#include "template_includes.c"
 
 
 /*---------------------------------------------------------------------------*/
@@ -42,6 +43,8 @@ void init()
 /*  conveyor is detected.																										 */
 /*                                                                           */
 /*  You must modify the code to add your own robot specific commands here.   */
+/*  make sure to use startConv and stopConv to stop the conveyor             */
+/*	unless you don't need it.                                                */
 /*---------------------------------------------------------------------------*/
 
 void operate()
