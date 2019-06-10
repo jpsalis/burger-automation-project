@@ -51,7 +51,7 @@ task main() // runs on start
 				writeDebugStreamLine("%d", count);
 			}
 
-			if(count != 0 && time1[T1] > 100)
+			if(count != 0 && time1[T1] > 200)
 			{
 				interpretCount(count);
 				count = 0;
