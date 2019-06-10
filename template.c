@@ -22,7 +22,7 @@ void init()
 {
 	// change iLightSensorMax if you find the value of the light sensor that begins operate()
 	// is too sensitive or not sensitive enough.
-	iLightSensorMax = 50;
+	iLightSensorMax = 60;
 
 }
 
@@ -41,7 +41,7 @@ void init()
 
 void operate()
 {
-	stopConv();
+	stopConv(); // use whenever you want, this is just the minimum requirements for conv robots
 	// code
-	startConv();
+	startConv(); // make sure this statement is used when the parsing has finished.
 }
