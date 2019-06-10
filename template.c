@@ -41,5 +41,7 @@ void init()
 
 void operate()
 {
-
+	stopConv();
+	// code
+	startConv();
 }
