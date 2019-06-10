@@ -1,5 +1,3 @@
-
-
 void setConvSpeed(int speed)
 {
 	motor[driveStart] = speed;
