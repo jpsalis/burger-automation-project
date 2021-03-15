@@ -1,5 +1,6 @@
 # burger-automation-project
-Repo for code changes in burger automation project. This repo is made to allow communication for robots connected to the conveyor or part of the project.
+Codebase made for 2019 High School robotics project. Code functions, but was never fully utilized in the classroom. I took too long to make the codebase and we didn't have enough time to finish.
+Repo for code changes in burger automation project. This repo is made to allow communication for robots connected to the conveyor part of the project.
 
 The branch you base your project on depends where your bot is connected to the project.
 
